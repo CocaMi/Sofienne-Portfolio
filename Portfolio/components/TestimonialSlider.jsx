@@ -9,28 +9,28 @@ import "swiper/css/pagination";
 
 const testimonialData = [
   {
-    image: "/t-avt-4.png",
+    image: "/Sofienne-Portfolio/t-avt-4.png",
     name: "M.Amine Chermiti",
     position: "Customer",
     message:
       "I asked Sofienne to create a website for my Narjess 4 building project, and I am very happy with the result. He was able to understand my needs and deliver a quality product on time.",
   },
   {
-    image: "/t-avt-1.png",
+    image: "/Sofienne-Portfolio/t-avt-1.png",
     name: "Ghazi Atroussi",
     position: "Employer",
     message:
       "Un jeune homme très sérieux et motivé, il a su s'adapter à notre environnement de travail et a fait preuve d'une grande capacité d'apprentissage. Je le recommande vivement.",
   },
   {
-    image: "/t-avt-2.png",
+    image: "/Sofienne-Portfolio/t-avt-2.png",
     name: "Montassar Kouki",
     position: "Employer",
     message:
       "Sofienne est un professionnel de première classe, il a su mener à bien son projet et a atteint ses objectifs. Je l'encourage à continuer sur cette voie.",
   },
   {
-    image: "/t-avt-3.png",
+    image: "/Sofienne-Portfolio/t-avt-3.png",
     name: "Yassine Bouabid",
     position: "Customer",
     message:
