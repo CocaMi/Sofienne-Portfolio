@@ -14,22 +14,22 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/Sofienne-Portfolio/thumb1.jpg",
+          path: "/thumb1.jpg",
           link: "http://example.com",
         },
         {
           title: "title",
-          path: "/Sofienne-Portfolio/thumb2.jpg",
+          path: "/thumb2.jpg",
           link: "http://example.com",
         },
         {
           title: "title",
-          path: "/Sofienne-Portfolio/thumb3.jpg",
+          path: "/thumb3.jpg",
           link: "http://example.com",
         },
         {
           title: "title",
-          path: "/Sofienne-Portfolio/thumb4.jpg",
+          path: "/thumb4.jpg",
           link: "http://example.com",
         },
       ],
@@ -38,22 +38,22 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/Sofienne-Portfolio/thumb4.jpg",
+          path: "/thumb4.jpg",
           link: "http://example.com",
         },
         {
           title: "title",
-          path: "/Sofienne-Portfolio/thumb1.jpg",
+          path: "/thumb1.jpg",
           link: "http://example.com",
         },
         {
           title: "title",
-          path: "/Sofienne-Portfolio/thumb2.jpg",
+          path: "/thumb2.jpg",
           link: "http://example.com",
         },
         {
           title: "title",
-          path: "/Sofienne-Portfolio/thumb3.jpg",
+          path: "/thumb3.jpg",
           link: "http://example.com",
         },
       ],
