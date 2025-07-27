@@ -7,7 +7,9 @@ const nextConfig = {
   basePath: '/Sofienne-Portfolio',
   assetPrefix: '/Sofienne-Portfolio/',
   images: {
-    unoptimized: true
+    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './imageLoader.js'
   }
 };
 
