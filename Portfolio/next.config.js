@@ -4,6 +4,8 @@ const nextConfig = {
   swcMinify: true,
   output: 'export',
   trailingSlash: true,
+  basePath: '/Sofienne-Portfolio',
+  assetPrefix: '/Sofienne-Portfolio/',
   images: {
     unoptimized: true
   }
