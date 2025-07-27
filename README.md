@@ -4,14 +4,14 @@ A modern, responsive portfolio website built with Next.js, React, and Tailwind C
 
 ## 🚀 Live Demo
 
-Your portfolio will be available at: `https://cocami.github.io/Sofienne-Portfolio/`
+Your portfolio will be available at: `https://USER_NAME.github.io/REPO_NAME/`
 
 ## 📋 Manual Setup Instructions for GitHub Pages
 
 To enable GitHub Pages for your portfolio, follow these steps:
 
 ### 1. Enable GitHub Pages
-1. Go to your GitHub repository: https://github.com/CocaMi/Sofienne-Portfolio
+1. Go to your GitHub repository: https://github.com/USER_NAME/REPO_NAME
 2. Click on **Settings** tab
 3. Scroll down to **Pages** section in the left sidebar
 4. Under **Source**, select **GitHub Actions**
@@ -23,7 +23,7 @@ To enable GitHub Pages for your portfolio, follow these steps:
 - Once completed (green checkmark), your site will be live
 
 ### 3. Access Your Live Portfolio
-Your portfolio will be available at: **https://cocami.github.io/Sofienne-Portfolio/**
+Your portfolio will be available at: **https://USER_NAME.github.io/REP_NAME/**
 
 ## 🛠️ Local Development
 
