@@ -1,8 +1,8 @@
 # Sofienne Oueslati's Portfolio
 
 A modern, responsive portfolio website built with Next.js, React, and Tailwind CSS.
-
-## 🚀 Live Demo
+Here's a live demo of the portfolio website: [https://cocami.vercel.app](https://cocami.vercel.app)
+## 🚀 Live Demo Github
 
 Your portfolio will be available at: `https://USER_NAME.github.io/REPO_NAME/`
 
