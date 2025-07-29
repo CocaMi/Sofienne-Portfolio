@@ -58,7 +58,7 @@ Hi! I'm Sofienne, a developer who thrives on turning ideas into digital reality.
 
 | Home Page | Projects | Contact |
 |-----------|----------|---------|
-| ![Home](Portfolio/public/thumb-1.jpg) | ![Projects](Portfolio/public/thumb-2.jpg) | ![Arcade](Protfolio/public/thumb3.jpg) |
+| ![Home](Portfolio/public/thumb-1.jpg) | ![Projects](Portfolio/public/thumb-2.jpg) | ![Arcade](Portfolio/public/thumb3.jpg) |
 
 ---
 
