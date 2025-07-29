@@ -1,11 +1,6 @@
 {
-  "scripts": {
-    "dev": "next dev",
-    "dev:8080": "next dev -p 8080"
-  },
   "dependencies": {
     "@vercel/speed-insights": "^1.2.0",
-    "next": "^15.4.4",
     "nodemailer": "^7.0.5"
   }
 }

@@ -5,7 +5,7 @@
   "author": {
     "name": "Sofienne Oueslati",
     "email": "Oueslati.sofienne3@gmail.com",
-    "url": "https://github.com/sanidhyy"
+    "url": "https://github.com/CocaMi"
   },
   "description": "Sofienne Oueslati is a Full-stack web developer with 10+ years of experience.",
   "keywords": [
@@ -26,12 +26,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanidhyy/modern-portfolio.git"
+    "url": "https://github.com/CocaMi/Sofienne-Portfolio.git"
   },
-  "homepage": "https://github.com/sanidhyy/modern-portfolio#readme",
+  "homepage": "https://github.com/CocaMi/Sofienne-Portfolio#readme",
   "bugs": {
-    "url": "https://github.com/sanidhyy/modern-portfolio/issues",
-    "email": "sanidhya.verma12345@gmail.com"
+    "url": "https://github.com/CocaMi/Sofienne-Portfolio/issues",
+    "email": "Oueslati.sofienne3@gmail.com"
   },
   "funding": [
     {
@@ -53,6 +53,7 @@
   },
   "dependencies": {
     "@next/font": "^13.4.4",
+    "@vercel/speed-insights": "^1.2.0",
     "framer-motion": "^10.12.16",
     "next": "14.1.1",
     "nodemailer": "^7.0.5",
