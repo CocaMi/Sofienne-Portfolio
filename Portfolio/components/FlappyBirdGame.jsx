@@ -12,15 +12,22 @@ const FlappyBirdGame = ({ onGameOver }) => {
   const gameContainerRef = useRef(null);
 
   // Responsive game size
+  const baseWidth = 600;
+  const baseHeight = 500;
   const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
-  const gameWidth = isMobile ? Math.min(window.innerWidth * 0.98, 360) : 600;
-  const gameHeight = isMobile ? Math.min(window.innerHeight * 0.6, 420) : 500;
-  const birdSize = 30;
-  const gravity = 4;
-  const jumpStrength = 70;
-  const obstacleWidth = 60;
-  const obstacleGap = 200;
-  const [obstacleSpeed, setObstacleSpeed] = useState(5);
+  const gameWidth = isMobile ? Math.min(window.innerWidth * 0.98, 360) : baseWidth;
+  const gameHeight = isMobile ? Math.min(window.innerHeight * 0.6, 420) : baseHeight;
+  const scaleX = gameWidth / baseWidth;
+  const scaleY = gameHeight / baseHeight;
+  const scale = Math.min(scaleX, scaleY);
+
+  const birdSize = 30 * scale;
+  const gravity = 4 * scale;
+  const jumpStrength = 70 * scale;
+  const obstacleWidth = 60 * scale;
+  const obstacleGap = 200 * scale;
+  const groundHeight = 60 * scale;
+  const [obstacleSpeed, setObstacleSpeed] = useState(5 * scale);
 
   useEffect(() => {
     let birdFallTimer;
@@ -58,9 +65,9 @@ const FlappyBirdGame = ({ onGameOver }) => {
   useEffect(() => {
     if (obstacleLeft < -obstacleWidth) {
       setObstacleLeft(gameWidth);
-      setObstacleHeight(Math.random() * (gameHeight - obstacleGap - 100) + 50);
+      setObstacleHeight(Math.random() * (gameHeight - obstacleGap - 100 * scale) + 50 * scale);
       setObstacleScored(false);
-      setObstacleSpeed((prev) => Math.min(prev + 0.3, 15));
+      setObstacleSpeed((prev) => Math.min(prev + 0.3 * scale, 15 * scale));
     }
   }, [obstacleLeft, gameWidth, gameHeight, obstacleGap]);
 
@@ -100,7 +107,7 @@ const FlappyBirdGame = ({ onGameOver }) => {
       setObstacleLeft(gameWidth);
       setScore(0);
       setObstacleScored(false);
-      setObstacleSpeed(5);
+      setObstacleSpeed(5 * scale);
       setGameOver(false);
       setGameHasStarted(true);
       return;
@@ -119,7 +126,7 @@ const FlappyBirdGame = ({ onGameOver }) => {
       style={{
         width: "98vw",
         maxWidth: 600,
-        height: isMobile ? "60vw" : 500,
+        height: gameHeight,
         maxHeight: 500,
         margin: "0 auto",
         cursor: gameHasStarted ? "pointer" : "default",
@@ -134,9 +141,9 @@ const FlappyBirdGame = ({ onGameOver }) => {
         style={{
           bottom: 0,
           width: "100%",
-          height: 60,
+          height: groundHeight,
           background: "repeating-linear-gradient(45deg, #ded895, #ded895 10px, #bcae6e 10px, #bcae6e 20px)",
-          borderTop: "4px solid #a18c3d",
+          borderTop: `${4 * scale}px solid #a18c3d`,
           zIndex: 2,
         }}
       ></div>
@@ -167,9 +174,9 @@ const FlappyBirdGame = ({ onGameOver }) => {
               left: obstacleLeft,
               top: 0,
               background: "linear-gradient(to bottom, #7eea5b 80%, #4ecb2c 100%)",
-              borderRadius: "20px 20px 40px 40px",
-              border: "4px solid #388e1a",
-              boxShadow: "0 4px 8px rgba(0,0,0,0.15)",
+              borderRadius: `${20 * scale}px ${20 * scale}px ${40 * scale}px ${40 * scale}px`,
+              border: `${4 * scale}px solid #388e1a`,
+              boxShadow: `0 ${4 * scale}px ${8 * scale}px rgba(0,0,0,0.15)`,
               zIndex: 1,
             }}
           ></div>
@@ -182,9 +189,9 @@ const FlappyBirdGame = ({ onGameOver }) => {
               left: obstacleLeft,
               top: obstacleHeight + obstacleGap,
               background: "linear-gradient(to bottom, #7eea5b 80%, #4ecb2c 100%)",
-              borderRadius: "40px 40px 20px 20px",
-              border: "4px solid #388e1a",
-              boxShadow: "0 4px 8px rgba(0,0,0,0.15)",
+              borderRadius: `${40 * scale}px ${40 * scale}px ${20 * scale}px ${20 * scale}px`,
+              border: `${4 * scale}px solid #388e1a`,
+              boxShadow: `0 ${4 * scale}px ${8 * scale}px rgba(0,0,0,0.15)`,
               zIndex: 1,
             }}
           ></div>
@@ -192,14 +199,16 @@ const FlappyBirdGame = ({ onGameOver }) => {
       )}
       {/* Score */}
       <div
-        className="absolute top-6 left-1/2"
+        className="absolute"
         style={{
+          top: 6 * scale,
+          left: "50%",
           transform: "translateX(-50%)",
-          fontSize: 36,
+          fontSize: 36 * scale,
           fontWeight: "bold",
           color: "#fff",
-          textShadow: "2px 2px 0 #000, 0 0 10px #fff",
-          letterSpacing: 2,
+          textShadow: `2px 2px 0 #000, 0 0 ${10 * scale}px #fff`,
+          letterSpacing: 2 * scale,
           zIndex: 10,
         }}
       >
@@ -208,20 +217,20 @@ const FlappyBirdGame = ({ onGameOver }) => {
       {/* Game Over message */}
       {gameOver && (
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 z-30">
-          <div className="text-white text-4xl font-bold mb-4 drop-shadow-lg">
+          <div className="text-white text-4xl font-bold mb-4 drop-shadow-lg" style={{fontSize: 32 * scale}}>
             Game Over!
           </div>
-          <div className="text-white text-2xl font-semibold mb-6 drop-shadow-lg">
+          <div className="text-white text-2xl font-semibold mb-6 drop-shadow-lg" style={{fontSize: 22 * scale}}>
             Your score: {score}
           </div>
-          <div className="text-white text-xl font-medium bg-accent px-6 py-2 rounded-lg cursor-pointer shadow-lg" style={{marginTop: 8}}>
+          <div className="text-white text-xl font-medium bg-accent px-6 py-2 rounded-lg cursor-pointer shadow-lg" style={{marginTop: 8 * scale, fontSize: 18 * scale}}>
             Click to Restart
           </div>
         </div>
       )}
       {/* Start message */}
       {!gameHasStarted && !gameOver && (
-        <div className="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold drop-shadow-lg z-20">
+        <div className="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold drop-shadow-lg z-20" style={{fontSize: 24 * scale}}>
           Click to Start!
         </div>
       )}
