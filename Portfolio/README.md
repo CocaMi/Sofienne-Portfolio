@@ -58,7 +58,7 @@ Hi! I'm Sofienne, a developer who thrives on turning ideas into digital reality.
 
 | Home Page | Projects | Contact |
 |-----------|----------|---------|
-| ![Home](public/thumb1.jpg) | ![Projects](public/thumb2.jpg) | ![Contact](public/thumb3.jpg) |
+| ![Home](public/thumb-1.jpg) | ![Projects](public/thumb-2.jpg) | ![Arcade](public/thumb3.jpg) |
 
 ---
 
@@ -104,7 +104,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 - **Email:** [sofienne.oueslati@gmail.com](mailto:sofienne.oueslati@gmail.com)
 - **LinkedIn:** [sofienne-oueslati-001274259](https://www.linkedin.com/in/sofienne-oueslati-001274259)
-- **Discord:** CocaMi#1230
+- **Discord:** CocaMi
 
 ---
 
