@@ -11,8 +11,10 @@ const FlappyBirdGame = ({ onGameOver }) => {
 
   const gameContainerRef = useRef(null);
 
-  const gameWidth = 600;
-  const gameHeight = 500;
+  // Responsive game size
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
+  const gameWidth = isMobile ? Math.min(window.innerWidth * 0.98, 360) : 600;
+  const gameHeight = isMobile ? Math.min(window.innerHeight * 0.6, 420) : 500;
   const birdSize = 30;
   const gravity = 4;
   const jumpStrength = 70;
@@ -115,11 +117,14 @@ const FlappyBirdGame = ({ onGameOver }) => {
       ref={gameContainerRef}
       className="relative overflow-hidden border-4 border-green-700"
       style={{
-        width: gameWidth,
-        height: gameHeight,
+        width: "98vw",
+        maxWidth: 600,
+        height: isMobile ? "60vw" : 500,
+        maxHeight: 500,
         margin: "0 auto",
         cursor: gameHasStarted ? "pointer" : "default",
         background: "linear-gradient(to bottom, #70c1ff 0%, #b2eaff 100%)",
+        touchAction: "manipulation",
       }}
       onClick={handleClick}
     >
