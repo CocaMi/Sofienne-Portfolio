@@ -1,86 +1,117 @@
 # Sofienne Oueslati's Portfolio
 
-A modern, responsive portfolio website built with Next.js, React, and Tailwind CSS.
-Here's a live demo of the portfolio website: [https://cocami.vercel.app](https://cocami.vercel.app)
-## 🚀 Live Demo Github
+![Portfolio Screenshot](public/thumb1.jpg)
 
-Your portfolio will be available at: `https://USER_NAME.github.io/REPO_NAME/`
+Welcome to the portfolio of **Sofienne Oueslati** — a passionate Full-stack Web Developer with over a decade of experience building robust, scalable, and visually stunning web applications. This portfolio is a showcase of my journey, skills, and the projects that define my professional identity.
 
-## 📋 Manual Setup Instructions for GitHub Pages
+---
 
-To enable GitHub Pages for your portfolio, follow these steps:
+## 🚀 Live Website
 
-### 1. Enable GitHub Pages
-1. Go to your GitHub repository: https://github.com/USER_NAME/REPO_NAME
-2. Click on **Settings** tab
-3. Scroll down to **Pages** section in the left sidebar
-4. Under **Source**, select **GitHub Actions**
-5. The deployment workflow will automatically trigger
+[![Visit Live Site](https://img.shields.io/badge/Live%20Demo-%23007ACC?style=for-the-badge&logo=vercel&logoColor=white)](https://cocami.vercel.app)
 
-### 2. Wait for Deployment
-- The GitHub Actions workflow will automatically build and deploy your site
-- Check the **Actions** tab in your repository to monitor the deployment progress
-- Once completed (green checkmark), your site will be live
+Explore the live version to experience the interactive UI, smooth animations, and responsive design in action.
 
-### 3. Access Your Live Portfolio
-Your portfolio will be available at: **https://USER_NAME.github.io/REP_NAME/**
+---
 
-## 🛠️ Local Development
+## 🌟 About Me
 
-To run this project locally:
+Hi! I'm Sofienne, a developer who thrives on turning ideas into digital reality. My expertise spans both frontend and backend technologies, with a focus on delivering seamless user experiences and clean, maintainable code. I love collaborating, learning new tools, and pushing the boundaries of what's possible on the web.
 
-```bash
-# Navigate to the Portfolio directory
-cd Portfolio
+- 🧑‍💻 **Role:** Full-stack Web Developer
+- 🗺️ **Location:** Tunisia
+- 💼 **Experience:** 10+ years
+- 🛠️ **Tech Stack:** JavaScript, TypeScript, React, Next.js, Node.js, Tailwind CSS, Framer Motion, Docker, and more.
 
-# Install dependencies
-npm install
+---
 
-# Start development server
-npm run dev
+## 🌐 Socials
 
-# Open http://localhost:3000 in your browser
-```
+[![GitHub](https://img.shields.io/badge/GitHub-%2312100E?style=for-the-badge&logo=github&logoColor=white)](https://github.com/CocaMi)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sofienne-oueslati-001274259)
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/cocami1230)
+[![Discord](https://img.shields.io/badge/Discord-%235865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/301816089879511040)
 
-## 📦 Build for Production
+---
 
-```bash
-# Navigate to Portfolio directory
-cd Portfolio
+## ⭐️ Follow & Support
 
-# Build and export static files
-npm run build
+[![Follow on GitHub](https://img.shields.io/github/followers/CocaMi?label=Follow&style=social)](https://github.com/CocaMi)
+[![Sponsor on PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/CocaMi)
 
-# The output will be in the 'out' directory
-```
+---
 
 ## ✨ Features
 
-- **Responsive Design**: Works perfectly on all devices
-- **Modern UI/UX**: Clean and professional design
-- **3D Animations**: Interactive particle effects
-- **Fast Loading**: Optimized for performance
-- **SEO Friendly**: Proper meta tags and structure
+- **Modern UI/UX:** Clean, responsive design with a focus on accessibility and user engagement.
+- **Animated Transitions:** Smooth page transitions and interactive effects powered by Framer Motion.
+- **Project Showcase:** Detailed cards for each project, including descriptions, tech stack, and links.
+- **Testimonials:** Real feedback from clients and collaborators.
+- **Contact Form:** Integrated email contact form for easy communication.
+- **Performance Optimized:** Fast load times and optimized assets.
+- **Mobile Friendly:** Fully responsive layout for all devices.
+- **Open Source:** Codebase available for learning and contributions.
 
-## 🔧 Technologies Used
+---
 
-- **Next.js 14**: React framework for production
-- **React 18**: Frontend library
-- **Tailwind CSS**: Utility-first CSS framework
-- **Framer Motion**: Animation library
-- **React Icons**: Icon library
-- **TypeScript Particles**: 3D particle effects
-- **Swiper**: Modern mobile touch slider
+## 🖼️ Screenshots
+
+| Home Page | Projects | Contact |
+|-----------|----------|---------|
+| ![Home](public/thumb-1.jpg) | ![Projects](public/thumb-2.jpg) | ![Arcade](public/thumb3.jpg) |
+
+---
+
+## 🛠️ Built With
+
+- **Next.js** — React framework for production-grade web apps
+- **React** — Component-based UI library
+- **Tailwind CSS** — Utility-first CSS for rapid styling
+- **Framer Motion** — Powerful animation library for React
+- **Docker** — Containerization for easy deployment
+- **Vercel** — Hosting and CI/CD
+
+---
+
+## 📦 Getting Started
+
+Clone the repository and run locally:
+
+```bash
+git clone https://github.com/CocaMi/Sofienne-Portfolio.git
+cd Sofienne-Portfolio/Portfolio
+npm install
+npm run dev
+```
+
+Visit [http://localhost:3000](http://localhost:3000) to view the site.
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/CocaMi/Sofienne-Portfolio/issues) or submit a pull request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a pull request
+
+---
+
+## 📬 Contact
+
+- **Email:** [sofienne.oueslati@gmail.com](mailto:sofienne.oueslati@gmail.com)
+- **LinkedIn:** [sofienne-oueslati-001274259](https://www.linkedin.com/in/sofienne-oueslati-001274259)
+- **Discord:** CocaMi
+
+---
 
 ## 📄 License
 
 This project is licensed under the MIT License.
 
-## 🤝 Contact
-
-- **Email**: Oueslati.sofienne3@gmail.com
-- **GitHub**: https://github.com/CocaMi
-
 ---
 
-**Note**: After pushing changes to your repository, GitHub Actions will automatically rebuild and redeploy your site. The process usually takes 2-5 minutes.
+> _Thank you for visiting my portfolio! If you like my work, feel free to connect or support me via the links above._
