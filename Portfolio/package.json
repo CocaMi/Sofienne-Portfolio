@@ -35,13 +35,10 @@
   },
   "funding": [
     {
-      "type": "patreon",
-      "url": "https://www.patreon.com/sanidhy"
-    },
-    {
-      "type": "Buy me a coffee",
-      "url": "https://www.buymeacoffee.com/sanidhy"
+      "type": "Paypal",
+      "url": "https://paypal.me/CocaMi"
     }
+    
   ],
   "scripts": {
     "dev": "next dev",

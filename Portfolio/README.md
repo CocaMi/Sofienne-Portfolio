@@ -1,6 +1,6 @@
 # Sofienne Oueslati's Portfolio
 
-![Portfolio Screenshot](public/thumb1.jpg)
+![Portfolio Screenshot](public/thumb-1.jpg)
 
 Welcome to the portfolio of **Sofienne Oueslati** — a passionate Full-stack Web Developer with over a decade of experience building robust, scalable, and visually stunning web applications. This portfolio is a showcase of my journey, skills, and the projects that define my professional identity.
 
