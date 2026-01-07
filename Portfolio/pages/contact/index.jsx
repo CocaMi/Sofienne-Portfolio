@@ -21,15 +21,18 @@ const Contact = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
+      
+      const result = await response.json();
+      
       if (response.ok) {
         alert("Thank you. I will get back to you ASAP.");
         myForm.reset();
       } else {
-        alert("Failed to send message. Please try again later.");
+        alert(`Error: ${result.error || "Failed to send message. Please try again later."}`);
       }
     } catch (error) {
       console.log(error);
-      alert("Failed to send message. Please try again later.");
+      alert("Network error. Please check your connection and try again.");
     } finally {
       setIsLoading(false);
     }
