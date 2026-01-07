@@ -25,6 +25,10 @@ export default async function handler(req, res) {
   try {
     console.log("Attempting to send email with data:", { name, email, subject, message });
     
+    // Test the transporter connection first
+    await transporter.verify();
+    console.log("Transporter connection verified");
+    
     const info = await transporter.sendMail({
       from: 'Portfolio Contact <Oueslati.sofienne3@gmail.com>',
       to: "Oueslati.sofienne3@gmail.com",
@@ -45,6 +49,17 @@ export default async function handler(req, res) {
     res.status(200).json({ message: "Email sent successfully", messageId: info.messageId });
   } catch (error) {
     console.error("Email sending failed:", error);
-    res.status(500).json({ error: "Failed to send email", details: error.message });
+    
+    // Provide more specific error messages
+    let errorMessage = "Failed to send email";
+    if (error.code === 'EAUTH') {
+      errorMessage = "Authentication failed. Please check your Gmail App Password.";
+    } else if (error.code === 'ECONNECTION') {
+      errorMessage = "Connection failed. Please check your internet connection.";
+    } else if (error.message.includes('User')) {
+      errorMessage = "Gmail authentication failed. Please verify your App Password.";
+    }
+    
+    res.status(500).json({ error: errorMessage, details: error.message });
   }
 }
