@@ -38,14 +38,13 @@
       "type": "Paypal",
       "url": "https://paypal.me/CocaMi"
     }
-    
   ],
   "scripts": {
-    "dev": "next dev",
-    "dev:8080": "next dev -p 8080",
-    "build": "next build",
+    "dev": "node init && next dev",
+    "dev:8080": "node init && next dev -p 8080",
+    "build": "node init && next build",
     "export": "next build",
-    "start": "next start",
+    "start": "node init && next start",
     "lint": "next lint"
   },
   "dependencies": {
