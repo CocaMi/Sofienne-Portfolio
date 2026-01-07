@@ -30,8 +30,8 @@ const workSlides = {
         },
         {
           title: "title",
-          path: "/thumb4.jpg",
-          link: "http://example.com",
+          path: "/thumblearn.JPG",
+          link: "https://lovable.dev/projects/e33e92bb-1c1e-46f4-9542-d13a1e93e313?permissionView=main",
         },
       ],
     },
