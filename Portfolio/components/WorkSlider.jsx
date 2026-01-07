@@ -78,17 +78,18 @@ const WorkSlider = () => {
           <div className="grid grid-cols-2 grid-rows-2 gap-4">
             {slide.images.map((image, imageI) => (
               <div
-                className="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                className="relative rounded-lg overflow-hidden flex items-center justify-center group w-full h-full"
                 key={imageI}
               >
-                <div className="flex items-center justify-center relative overflow-hidden group">
+                <div className="flex items-center justify-center relative overflow-hidden group w-full h-[200px]">
                   {/* image */}
                   <Image
                     src={image.path}
                     alt={image.title}
-                    width={500}
-                    height={300}
+                    width={400}
+                    height={200}
                     className="w-full h-full object-cover"
+                    style={{ objectFit: 'cover' }}
                   />
 
                   {/* overlay gradient */}
