@@ -8,17 +8,17 @@ const ProjectsBtn = () => {
     <div className="mx-auto xl:mx-0">
       <Link
         href="/work"
-        className="relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group"
+        className="relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group z-10"
       >
         <Image
           src="/rounded-text.png"
           alt="rounded text"
           width={141}
           height={148}
-          className="animate-spin-slow w-full h-full max-w-[141px] max-h-[148px] pointer-events-none select-none"
+          className="animate-spin-slow w-full h-full max-w-[141px] max-h-[148px] pointer-events-none select-none z-0"
         />
         <HiArrowRight
-          className="absolute text-4xl group-hover:translate-x-2 transition-all duration-300"
+          className="absolute text-4xl group-hover:translate-x-2 transition-all duration-300 z-20"
           aria-hidden
         />
       </Link>
