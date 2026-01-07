@@ -6,12 +6,13 @@ import {
   RxRocket,
   RxArrowTopRight,
 } from "react-icons/rx";
-import { FreeMode, Pagination } from "swiper";
+import { FreeMode, Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const serviceData = [
   {
@@ -57,8 +58,9 @@ const ServiceSlider = () => {
       pagination={{
         clickable: true,
       }}
-      modules={[FreeMode, Pagination]}
+      modules={[FreeMode, Pagination, Navigation]}
       freeMode
+      navigation
       className="h-[240px] sm:h-[340px]"
     >
       {serviceData.map((item, i) => (
