@@ -30,7 +30,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-1 xl:mb-2"
           >
            <b>  Hi, I'm Sofienne Oueslati,</b> <br /> 
             a passionate web developer specialized in creating responsive and user-friendly websites that are both visually appealing and functional. Whether you need a simple landing page or a complex e-commerce website, I have the skills and expertise to bring your ideas to life.
@@ -39,7 +39,7 @@ const Home = () => {
           </motion.p>
 
           {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center xl:hidden relative mb-8">
             <ProjectsBtn />
           </div>
           <motion.div
@@ -47,7 +47,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden xl:flex"
+            className="hidden xl:flex mb-8"
           >
             <ProjectsBtn />
           </motion.div>
