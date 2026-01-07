@@ -102,8 +102,8 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📬 Contact
 
-- **Email:** [sofienne.oueslati@gmail.com](mailto:sofienne.oueslati@gmail.com)
-- **LinkedIn:** [sofienne-oueslati-001274259](https://www.linkedin.com/in/sofienne-oueslati-001274259)
+- **Email:** [oueslati.sofienne3@gmail.com](mailto:oueslati.sofienne3@gmail.com)
+- **LinkedIn:** [CocaMi](www.linkedin.com/in/cocami)
 - **Discord:** CocaMi
 
 ---
