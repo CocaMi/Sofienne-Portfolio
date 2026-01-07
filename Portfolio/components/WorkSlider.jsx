@@ -15,13 +15,13 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
-          link: "http://example.com",
+          path: "/thumb-1.jpg",
+          link: "https://github.com/CocaMi/Sofienne-Portfolio",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
-          link: "http://example.com",
+          path: "thumbmiti.PNG",
+          link: "https://chermiti-building.com",
         },
         {
           title: "title",
