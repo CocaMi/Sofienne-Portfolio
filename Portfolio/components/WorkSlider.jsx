@@ -20,13 +20,13 @@ const workSlides = {
         },
         {
           title: "title",
-          path: "thumbmiti.PNG",
+          path: "thumbmiti.jpg",
           link: "https://chermiti-building.com",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
-          link: "http://example.com",
+          path: "/thumbtris.jpg",
+          link: "https://github.com/CocaMi/tetris-multiplayer",
         },
         {
           title: "title",
