@@ -127,5 +127,4 @@ const WorkSlider = () => {
     </Swiper>
   );
 };
-
 export default WorkSlider;
