@@ -20,7 +20,7 @@ const workSlides = {
         },
         {
           title: "title",
-          path: "/thumbnar.jpg",
+          path: "/narjess4.jpg",
           link: "https://chermiti-building.com",
         },
         {
