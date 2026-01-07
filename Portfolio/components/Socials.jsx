@@ -62,11 +62,7 @@ const Socials = () => {
           href={social.link}
           target="_blank"
           rel="noreferrer noopener"
-          className={`${
-            social.name === "Github"
-              ? "bg-accent rounded-full p-[5px] hover:text-white"
-              : "hover:text-accent"
-          } transition-all duration-300`}
+          className="hover:text-accent transition-all duration-300"
         >
           <social.Icon aria-hidden />
           <span className="sr-only">{social.name}</span>
